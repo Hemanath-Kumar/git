@@ -12,5 +12,17 @@
     <h1>hii</h1>
     <h1>hello</h1>
     <P>asdasd</P>
+    <p> You should be able to force your local revision to the remote repo by using
+
+        git push -f <remote> <branch>
+        (e.g. git push -f origin master). Leaving off <remote> and <branch> will force push all local branches that have set --set-upstream.
+        
+        Just be warned, if other people are sharing this repository their revision history will conflict with the new one. And if they have any local commits after the point of change they will become invalid.
+        
+        Update: Thought I would add a side-note. If you are creating changes that others will review, then it's not uncommon to create a branch with those changes and rebase periodically to keep them up-to-date with the main development branch. Just let other developers know this will happen periodically so they'll know what to expect.
+        
+        Update 2: Because of the increasing number of viewers I'd like to add some additional information on what to do when your upstream does experience a force push.
+    </p>
+
 </body>
 </html>
