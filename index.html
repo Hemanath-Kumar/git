@@ -20,7 +20,47 @@
         
         git log --oneline 
         It's an alias for git log --pretty=oneline --abbrev-commit, and displays the "short sha" and "short description", for example:
-        
+        <h1>hii</h1>
+
+        <h3>hlo</h3>
+        <h1>hdhdhdhda</h1>
+        <h3>hii</h3>
+        <center>hari</center>
+        <P>
+            Have you tried this?
+            
+            git log --oneline 
+            It's an alias for git log --pretty=oneline --abbrev-commit, and displays the "short sha" and "short description", for example:
+            
+            9bee8857 Write more code
+            831fdd6e Write some code Second line of message
+            The problem is that you are missing an empty line after the first line of your commit message. The command above usually works for me, but I just tested on a commit without empty second line. I got the same result as you: the whole message on one line.
+            
+            Empty second line is a standard in git commit messages. The behaviour you see was probably implemented on purpose.
+            
+            The first line of a commit message is meant to be a short description. If you cannot make it in a single line you can use several, but git considers everything before the first empty line to be the "short description". oneline prints the whole short description, so all your 3 rows.</P>
+        <h1>not important</h1>
+        <h2>aga</h2>   <h1>hii</h1>
+
+        <h3>hlo</h3>
+        <h1>hdhdhdhda</h1>
+        <h3>hii</h3>
+        <center>hari</center>
+        <P>
+            Have you tried this?
+            
+            git log --oneline 
+            It's an alias for git log --pretty=oneline --abbrev-commit, and displays the "short sha" and "short description", for example:
+            
+            9bee8857 Write more code
+            831fdd6e Write some code Second line of message
+            The problem is that you are missing an empty line after the first line of your commit message. The command above usually works for me, but I just tested on a commit without empty second line. I got the same result as you: the whole message on one line.
+            
+            Empty second line is a standard in git commit messages. The behaviour you see was probably implemented on purpose.
+            
+            The first line of a commit message is meant to be a short description. If you cannot make it in a single line you can use several, but git considers everything before the first empty line to be the "short description". oneline prints the whole short description, so all your 3 rows.</P>
+        <h1>not important</h1>
+        <h2>aga</h2>
         9bee8857 Write more code
         831fdd6e Write some code Second line of message
         The problem is that you are missing an empty line after the first line of your commit message. The command above usually works for me, but I just tested on a commit without empty second line. I got the same result as you: the whole message on one line.
